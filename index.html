@@ -30,11 +30,11 @@
     <div>姓名：<input type='text' id='name'/></div>
     <div>留言：<input type='text' id='memo'/></div>
     <div><button type="button" id="button">保存</button></div>
-    <!-- <ul>
+    <ul>
         <li id="deleteTable">删除表</li>
         <li id="logTable">列出数据库所有的表</li>
         <li>时间</li>
-    </ul> -->
+    </ul>
 
     <div id='datatable'>
         <ul>
@@ -133,7 +133,11 @@
 
     fetch('https://gtuooa.github.io/gitpage/data.json', {
         method: 'GET', // *GET, POST, PUT, DELETE, etc.
-    }).then(response => response.json())
+    }).then((response, ree) => {
+        return response.json()
+    }).then(value => {
+        console.log(value);
+    })
 
 
 </script>
