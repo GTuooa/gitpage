@@ -1,1 +1,1 @@
-alert('广告gggffffffff')
+alert('广告')
